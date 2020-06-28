@@ -1,0 +1,102 @@
+Breakpoint 1 at 0x4004dd: file main.c, line 8.
+Starting program: /home/mynt/git-project/GDB_demo/demo3/main.out 
+
+Breakpoint 1, square (i=5) at main.c:8
+8	    int result = 0;
+#0  square (i=5) at main.c:8
+        result = 16
+#1  0x0000000000400519 in main (argc=1, argv=0x7fffffffda68) at main.c:18
+        i = 5
+i = 5
+$1 = 30
+$2 = "hit break when i==5"
+#0  square (i=5) at main.c:8
+#1  0x0000000000400519 in main (argc=1, argv=0x7fffffffda68) at main.c:18
+Starting program: /home/mynt/git-project/GDB_demo/demo3/main.out 9
+
+Breakpoint 1, square (i=5) at main.c:8
+8	    int result = 0;
+#0  square (i=5) at main.c:8
+        result = 16
+#1  0x0000000000400519 in main (argc=2, argv=0x7fffffffda68) at main.c:18
+        i = 5
+i = 5
+$3 = 30
+$4 = "hit break when i==5"
+Temporary breakpoint 2 at 0x400502: file main.c, line 16.
+Starting program: /home/mynt/git-project/GDB_demo/demo3/main.out 9
+
+Temporary breakpoint 2, main (argc=2, argv=0x7fffffffda68) at main.c:16
+16	    for (i = 0;i < 10; i++)
+18	        total += square(i);
+16	    for (i = 0;i < 10; i++)
+18	        total += square(i);
+16	    for (i = 0;i < 10; i++)
+18	        total += square(i);
+16	    for (i = 0;i < 10; i++)
+18	        total += square(i);
+16	    for (i = 0;i < 10; i++)
+Undefined command: "nn".  Try "help".
+18	        total += square(i);
+#0  main (argc=2, argv=0x7fffffffda68) at main.c:18
+#0  main (argc=2, argv=0x7fffffffda68) at main.c:18
+        i = 4
+Breakpoint 1 at 0x4004dd: file main.c, line 8.
+Starting program: /home/mynt/git-project/GDB_demo/demo3/main.out 
+
+Breakpoint 1, square (i=5) at main.c:8
+8	    int result = 0;
+#0  square (i=5) at main.c:8
+        result = 16
+#1  0x0000000000400519 in main (argc=1, argv=0x7fffffffda68) at main.c:18
+        i = 5
+i = 5
+$1 = 30
+$2 = "hit break when i==5"
+$3 = 30
+#0  square (i=5) at main.c:8
+#1  0x0000000000400519 in main (argc=1, argv=0x7fffffffda68) at main.c:18
+#0  square (i=5) at main.c:8
+        result = 16
+#1  0x0000000000400519 in main (argc=1, argv=0x7fffffffda68) at main.c:18
+        i = 5
+9	    result = i * i;
+10	    return result;
+11	}
+main (argc=1, argv=0x7fffffffda68) at main.c:16
+16	    for (i = 0;i < 10; i++)
+$4 = '\000' <repeats 113 times>
+No symbol "sum" in current context.
+18	        total += square(i);
+16	    for (i = 0;i < 10; i++)
+No symbol "sum" in current context.
+18	        total += square(i);
+$5 = 91
+#0  main (argc=1, argv=0x7fffffffda68) at main.c:18
+        i = 7
+$6 = (char **) 0x7fffffffda68
+rax            0x5b	91
+rbx            0x0	0
+rcx            0x0	0
+rdx            0x24	36
+rsi            0x7fffffffda68	140737488345704
+rdi            0x6	6
+rbp            0x7fffffffd980	0x7fffffffd980
+rsp            0x7fffffffd960	0x7fffffffd960
+r8             0x4005b0	4195760
+r9             0x7ffff7de7ac0	140737351940800
+r10            0x846	2118
+r11            0x7ffff7a2d740	140737348032320
+r12            0x4003e0	4195296
+r13            0x7fffffffda60	140737488345696
+r14            0x0	0
+r15            0x0	0
+rip            0x40050f	0x40050f <main(int, char**)+28>
+eflags         0x293	[ CF AF SF IF ]
+cs             0x33	51
+ss             0x2b	43
+ds             0x0	0
+es             0x0	0
+fs             0x0	0
+gs             0x0	0
+$7 = (void (*)(void)) 0x40050f <main(int, char**)+28>
